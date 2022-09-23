@@ -28,13 +28,17 @@ public class App {
         //System.out.println(listaDeFilmes.get(0));
 
         // exibir e manipular os dados
-        System.out.println();
+        var gerador = new GeradorDeFigurinhas();
         for (Map<String,String> filme : listaDeFilmes) {
+            
+            var urlImg = filme.get("image");
+            var rating = filme.get("imDbRating");
+            var fileName = filme.get("title")+".png";
+            
+           
+            gerador.criar(urlImg,rating, "TOPZEIRAA", fileName);
+
             System.out.println(filme.get("title"));
-            System.out.println(filme.get("image"));
-            System.out.println(filme.get("rank"));
-            System.out.println(filme.get("imDbRating"));
-            System.out.println();
         }
 
     }
