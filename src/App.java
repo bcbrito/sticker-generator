@@ -4,8 +4,12 @@ public class App {
 
         // fazer uma conexão HTTP e buscar os top 250 filmes
         // String url = "https://imdb-api.com/en/API/MostPopularMovies/k_4hhbeiwn";
-        String url = "https://api.nasa.gov/planetary/apod?start_date=2022-09-01&end_date=2022-09-22&api_key=aOPOPk0IxSc6zBgAZoVhKcUa7D10Ksx3HvhT3tj4";
-        var extrator = new ExtratorDeConteudoDaNasa();
+        
+        //String url = "https://api.nasa.gov/planetary/apod?start_date=2022-09-01&end_date=2022-09-22&api_key=aOPOPk0IxSc6zBgAZoVhKcUa7D10Ksx3HvhT3tj4";
+        //var extrator = new ExtratorDeConteudoDaNasa();
+
+        String url = "http://localhost:8080/linguagens";
+        var extrator = new ExtratorDeConteudoDoIMDB();
 
         var http = new ClienteHttp();
         var json = http.buscaDados(url);
