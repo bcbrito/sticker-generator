@@ -40,7 +40,7 @@ public class ImdbExtractor extends AbstractApi {
 
   @Override
   public void consume(Endpoint endpoint) throws StickerApiException {
-    var key = "key_imdb"; //Ver uma forma de ocultar isso depois 
+    var key = "k_4hhbeiwn"; 
     
     try {
       var jsonNode = new ObjectMapper().readTree(jsonFromGet(endpoint.getUrl() + key));
@@ -66,9 +66,10 @@ public class ImdbExtractor extends AbstractApi {
             Double rating = !data.rating().isBlank() ? Double.valueOf(data.rating()) : 0;
             String text = RATING_TEXT.floorEntry((int) Math.round(rating)).getValue();
             createSticker(StickerParameters.builder()
-                .image(new URL(data.urlImage().replaceAll("\\._(.+).jpg$", ".jpg")).openStream())
-                .targetWidth(1000)
-                .targetHeight(1500)
+                // .image(new URL(data.urlImage().replaceAll("\\._(.+).jpg$", ".jpg")).openStream())
+                .image(new URL(data.urlImage().replaceAll("(_+)(.*).jpg$", ".jpg")).openStream())
+                .targetWidth(600)
+                .targetHeight(1000)
                 .text(text)
                 .fontName("Comic Sans MS")
                 .fontSize(128)

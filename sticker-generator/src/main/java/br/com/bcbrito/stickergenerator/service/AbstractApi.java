@@ -5,7 +5,11 @@ import java.util.Optional;
 
 import br.com.bcbrito.stickergenerator.model.StickerContent;
 
-
+import lombok.Getter;
+import lombok.Setter;
+@Getter
+@Setter
+@SuppressWarnings("squid:S106")
 public abstract class AbstractApi implements StickerApi {
 
 	private List<StickerContent> data;
@@ -14,15 +18,7 @@ public abstract class AbstractApi implements StickerApi {
 	public void limitData(int max) {
 		if (max < data.size())
 			this.data = this.data.subList(0, max);
-	}
-
-	public List<StickerContent> getData() {
-		return data;
-	}
-
-	public void setData(List<StickerContent> data) {
-		this.data = data;
-	}
+	}	
 	
 	private void printDataField(String format, String field) {
 		System.out.println(format + field + "\033[0m");

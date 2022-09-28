@@ -60,7 +60,7 @@ public class Sticker {
 				: 1;
 		var heigth = original.getHeight() > param.getTargetHeight()
 				? param.getTargetHeight() / Double.valueOf(original.getHeight())
-				: 1;
+				: 2;
 
 		// Retorna escala com o menor dos dois valores
 		Double scale = Math.min(width, heigth);
@@ -85,8 +85,7 @@ public class Sticker {
 		Shape textShape = new TextLayout(param.getText(), font, graphic.getFontRenderContext()).getOutline(scaleText(param.getText(), size.get(WIDTH), font));
 
 		var coordinateX = (sticker.getWidth() - textShape.getBounds().width) / 2;
-		var coordinateY = (param.getHeightPlus() - (textShape.getBounds().height) / 2) + textShape.getBounds().height
-				+ size.get(HEIGHT);
+		var coordinateY = ((param.getHeightPlus() - (textShape.getBounds().height)) / 2) + size.get(HEIGHT) + textShape.getBounds().height;
 		graphic.translate(coordinateX, coordinateY);
 
 		graphic.setColor(param.getTextColor());
