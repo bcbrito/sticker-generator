@@ -62,28 +62,14 @@ Faça os seguintes passos:
 mvn clean package
 ```
 
-### E adicionando os parâmetros (<strong>Keys</strong>), para autenticação, nas requisições das APIs:
-
-```
- java -Dimdb_key=${IMDB_KEY} -Dmarvel_public_key=${MARVEL_PUBLIC_KEY} -Dmarvel_private_key=${MARVEL_PRIVATE_KEY}
- -jar target/imersao-1.0-SNAPSHOT-jar-with-dependencies.jar
-```
 
 ## 🎈 Saída <a name="saida"></a>
 
 Exemplos da saída atual:
 
-![Saida Padrão da Api do IMDB](data/image/readme/Aula1.jpeg)
+![Geração personalizada de Stickers da API do IMDB](https://raw.githubusercontent.com/bcbrito/sticker-generator/main/data/image/readme/Aula2comDesafios.png)
 
-![Saída com coleto de Nota da Api do IMDB](data/image/readme/Aula1ajustada.jpeg)
-
-![Geração personalizada de Stickers da API do IMDB](data/image/readme/Aula2comDesafios.jpeg)
-
-![Saída com informações da Api da MARVEL](data/image/readme/Aula3.jpeg)
-
-![Geração de Sticker da Api da MARVEL](data/image/readme/Aula3comDesafios.jpeg)
-
-![Geração de Sticker da Api da Alura Challenge](data/image/readme/Aula4.jpeg)
+![Geração de Sticker da Api da MARVEL](https://raw.githubusercontent.com/bcbrito/sticker-generator/main/data/image/readme/Aula3comDesafios.png)
 
 ## 🔧 Desenvolvimento <a name = "desenvolvimento"></a>
 
@@ -97,8 +83,9 @@ Conteúdo a partir da Aula 03 e refatorações para Aula 04:
 - [x] Uso de uma classe abstrata, para separar os métodos relacionados aos dados, oriundos do consumo das Apis;
 - [x] Adição de campo imagem e campos para cálculo de pontuação no modelo utilizado em uma terceira Api, desenvolvida em um Challenge de Back-end na Alura, para ser utilizada como um microsserviço: [Spring Boot API](https://github.com/bcbrito/bcbrito-challenge-spring-api)
 - [x] Implementação para consumo da Api Alura Challenge em localhost;
-- [ ] Criação de classes de testes;
-- [ ] Refatorações com base no SOLID e Design Pattern; 
+- [x] Criação de classes de testes;
+- [ ] Implementar testes para cada api que será consumida
+- [x] Refatorações com base no SOLID e Design Pattern; 
 
 
 
@@ -106,6 +93,7 @@ Conteúdo a partir da Aula 03 e refatorações para Aula 04:
 
 - [Java](https://www.oracle.com/java/technologies/downloads/#java17) - Java JDK
 - [Maven](https://maven.apache.org/download.cgi) - Apache Maven Project
+- [Lombok](https://projectlombok.org/setup/eclipse) - Lombok para gerar o getters e setters automáticos :)
 
 
 ## ✍️ Colaboradores <a name = "colaboradores"></a>
