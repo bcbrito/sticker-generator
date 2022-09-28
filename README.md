@@ -73,19 +73,19 @@ Exemplos da saída atual:
 
 ## 🔧 Desenvolvimento <a name = "desenvolvimento"></a>
 
-Conteúdo a partir da Aula 03 e refatorações para Aula 04:
+Conteúdo:
 - [x] Reestruturação do projeto para consumir a Api da MARVEL.
 - [x] Sobrescrita do método de saída no terminal com informações da nova Api;
 - [x] Sobrescrita do método de geração de Stickers para imagens da nova Api;
 - [x] Uso de uma classe de exceção personalizado;
 - [x] Automatizar a criação da instância da interface <strong>StickerApi</strong> de acordo com o _endpoint_ a ser consumido;
 - [x] Upgrade da JDK do projeto, versão 17, para implementar casos de uso com classes <strong>Record</strong>;
-- [x] Uso de uma classe abstrata, para separar os métodos relacionados aos dados, oriundos do consumo das Apis;
-- [x] Adição de campo imagem e campos para cálculo de pontuação no modelo utilizado em uma terceira Api, desenvolvida em um Challenge de Back-end na Alura, para ser utilizada como um microsserviço: [Spring Boot API](https://github.com/bcbrito/bcbrito-challenge-spring-api)
-- [x] Implementação para consumo da Api Alura Challenge em localhost;
+- [x] Uso de uma classe abstrata para o extrator, para separar os métodos relacionados aos dados, oriundos do consumo das Apis;
 - [x] Criação de classes de testes;
-- [ ] Implementar testes para cada api que será consumida
 - [x] Refatorações com base no SOLID e Design Pattern; 
+- [ ] Implementar testes para cada api que será consumida
+- [ ] Criar api para listar as linguagens de programação topzeiras e gerar os stickers
+
 
 
 
