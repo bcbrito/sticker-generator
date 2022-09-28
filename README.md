@@ -73,17 +73,9 @@ mvn clean package
 
 Exemplos da saída atual:
 
-![Saida Padrão da Api do IMDB](data/image/readme/Aula1.jpeg)
+![Geração personalizada de Stickers da API do IMDB](https://raw.githubusercontent.com/bcbrito/sticker-generator/main/data/image/readme/Aula2comDesafios.png)
 
-![Saída com coleto de Nota da Api do IMDB](data/image/readme/Aula1ajustada.jpeg)
-
-![Geração personalizada de Stickers da API do IMDB](data/image/readme/Aula2comDesafios.jpeg)
-
-![Saída com informações da Api da MARVEL](data/image/readme/Aula3.jpeg)
-
-![Geração de Sticker da Api da MARVEL](data/image/readme/Aula3comDesafios.jpeg)
-
-![Geração de Sticker da Api da Alura Challenge](data/image/readme/Aula4.jpeg)
+![Geração de Sticker da Api da MARVEL](https://raw.githubusercontent.com/bcbrito/sticker-generator/main/data/image/readme/Aula3comDesafios.png)
 
 ## 🔧 Desenvolvimento <a name = "desenvolvimento"></a>
 
