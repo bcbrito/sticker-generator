@@ -35,8 +35,7 @@ public class Sticker {
 
 			formatSize(param, original, size);
 
-			BufferedImage sticker = new BufferedImage(size.get(WIDTH), size.get(HEIGHT) + param.getHeightPlus(),
-					TRANSLUCENT);
+			BufferedImage sticker = new BufferedImage(size.get(WIDTH), size.get(HEIGHT) + param.getHeightPlus(), TRANSLUCENT);
 
 			Graphics2D graphic = (Graphics2D) sticker.getGraphics();
 			graphic.drawImage(original, 0, 0, size.get(WIDTH), size.get(HEIGHT), null);
@@ -58,6 +57,7 @@ public class Sticker {
 		var width = original.getWidth() > param.getTargetWidth()
 				? param.getTargetWidth() / Double.valueOf(original.getWidth())
 				: 1;
+		
 		var heigth = original.getHeight() > param.getTargetHeight()
 				? param.getTargetHeight() / Double.valueOf(original.getHeight())
 				: 2;
@@ -70,15 +70,19 @@ public class Sticker {
 	}
 
 	private void formatTopImage(StickerParameters param, BufferedImage sticker, Graphics2D graphic) throws IOException {
+
+		//Coloco a imagem dando joinha hu3hu3hu3hu3 
 		if (param.isTop()) {
-			BufferedImage topImage = ImageIO.read(new File(param.getTopImage()));
-			graphic.drawImage(topImage, sticker.getWidth() - topImage.getWidth() + 35,
-					sticker.getHeight() - topImage.getHeight(), null);
+			
+			var topImage = ImageIO.read(new File(param.getTopImage()));
+			var width = sticker.getWidth() - topImage.getWidth() + 35; 
+			var heigth = sticker.getHeight() - topImage.getHeight();
+			
+			graphic.drawImage(topImage, width, heigth, null);
 		}
 	}
 
-	private void formatText(StickerParameters param, Map<String, Integer> size, BufferedImage sticker,
-			Graphics2D graphic) {
+	private void formatText(StickerParameters param, Map<String, Integer> size, BufferedImage sticker, Graphics2D graphic) {
 
 		var font = new Font(param.getFontName(), param.getFontStyle(), param.getFontSize());
 

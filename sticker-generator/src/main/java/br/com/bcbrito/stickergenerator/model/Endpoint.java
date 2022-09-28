@@ -15,7 +15,7 @@ public enum Endpoint {
 
 	private static final EnumSet<Endpoint> IMDB = EnumSet.of(TOP_250_MOVIES, MOST_POPULAR_MOVIES, TOP_250_TV, MOST_POPULAR_TV);
 
-	private static final EnumSet<Endpoint> MARVEL = EnumSet.of(CHARACTERS);
+	private static final EnumSet<Endpoint> MARVEL = EnumSet.of(CHARACTERS,COMICS);
 
 	private static final EnumSet<Endpoint> CHALLENGE = EnumSet.of(LINGUAGENS);
 

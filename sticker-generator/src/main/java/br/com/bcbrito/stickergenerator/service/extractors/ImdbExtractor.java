@@ -17,12 +17,12 @@ import br.com.bcbrito.stickergenerator.exception.StickerApiException;
 import br.com.bcbrito.stickergenerator.model.Endpoint;
 import br.com.bcbrito.stickergenerator.model.StickerContent;
 import br.com.bcbrito.stickergenerator.model.StickerParameters;
-import br.com.bcbrito.stickergenerator.service.AbstractApi;
+import br.com.bcbrito.stickergenerator.service.AbstractExtractor;
 
 @Component
 @Getter
 @Setter
-public class ImdbExtractor extends AbstractApi {
+public class ImdbExtractor extends AbstractExtractor {
 
   private static final TreeMap<Integer, String> RATING_TEXT = new TreeMap<>();
   static {
@@ -82,7 +82,7 @@ public class ImdbExtractor extends AbstractApi {
             System.out.println("Fail: " + e.getMessage());
           }
         });
-    System.out.println("...Finalizado!");
+    System.out.println("...Finalizado! :)");
   }
 
 }

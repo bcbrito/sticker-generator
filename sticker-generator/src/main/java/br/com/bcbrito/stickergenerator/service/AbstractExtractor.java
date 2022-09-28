@@ -10,7 +10,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @SuppressWarnings("squid:S106")
-public abstract class AbstractApi implements StickerApi {
+public abstract class AbstractExtractor implements StickerApi {
 
 	private List<StickerContent> data;
 
