@@ -1,9 +1,9 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=450px height=250px src="https://i.ytimg.com/vi/WdT90ffB-0Q/maxresdefault.jpg#vitrinedev" alt="Project logo"></a>
+ <img width=450px height=250px src="https://raw.githubusercontent.com/bcbrito/sticker-generator/main/data/image/readme/Capa.png" alt="Project logo"></a>
 </p>
 
-<h3 align="center">PROJETO DE IMERSÃO EM JAVA</h3>
+<h3 align="center">Projeto de imersão em JAVA - Gerador de Stickers</h3>
 
 <div align="center">
 
