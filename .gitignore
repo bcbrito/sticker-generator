@@ -22,7 +22,12 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
-.vscode/
+/sticker-generator/.vscode/
+/sticker-generator/entrada/*
+/sticker-generator/saida/*
+/.metadata/
 
-/entrada/*
-/saida/*
+target
+.vscode
+data/image/sticker/*
+!joinha.png
