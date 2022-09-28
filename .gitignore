@@ -28,6 +28,6 @@ hs_err_pid*
 /.metadata/
 
 target
-.vscode
+.vscode/
 data/image/sticker/*
 !joinha.png
