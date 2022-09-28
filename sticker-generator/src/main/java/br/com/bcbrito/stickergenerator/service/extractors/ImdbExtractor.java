@@ -29,7 +29,7 @@ public class ImdbExtractor extends AbstractApi {
     RATING_TEXT.put(0, "AVALIAR");
     RATING_TEXT.put(1, "PESSIMO");
     RATING_TEXT.put(4, "RUIM");
-    RATING_TEXT.put(6, "PASSATEMPO");
+    RATING_TEXT.put(6, "MEIA BOCA");
     RATING_TEXT.put(8, "TOP");
   }
 

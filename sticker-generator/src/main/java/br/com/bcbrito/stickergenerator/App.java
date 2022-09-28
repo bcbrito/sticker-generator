@@ -14,7 +14,7 @@ public class App {
 
 		try (AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(StickerConfig.class);) 
 		{
-			applicationContext.getBean(StickerApp.class).callApi(Endpoint.TOP_250_MOVIES);
+			applicationContext.getBean(StickerApp.class).callApi(Endpoint.MOST_POPULAR_MOVIES);
 		} 
 		catch (StickerApiException | FileNotFoundException e) {
 			e.printStackTrace();
