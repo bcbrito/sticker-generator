@@ -8,7 +8,7 @@ import br.com.bcbrito.stickergenerator.config.StickerConfig;
 import br.com.bcbrito.stickergenerator.exception.StickerApiException;
 import br.com.bcbrito.stickergenerator.model.Endpoint;
 
-public class StickergeneratorApplication {
+public class App {
 
 	public static void main(String[] args) {
 
