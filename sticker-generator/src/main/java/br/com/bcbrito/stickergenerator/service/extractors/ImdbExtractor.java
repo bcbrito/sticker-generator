@@ -2,6 +2,8 @@ package br.com.bcbrito.stickergenerator.service.extractors;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.TreeMap;
 import java.util.stream.StreamSupport;
 
@@ -84,6 +86,24 @@ public class ImdbExtractor extends AbstractExtractor {
         });
     System.out.println("...Finalizado! :)");
   }
+
+  @Override
+	public void minimumRating(Float min){
+		
+    System.out.println("Foram encontrados " + getData().size() + " ...");
+
+		List<StickerContent> newListStickers = new ArrayList<StickerContent>();
+
+		for (StickerContent stickerContent : getData()) {
+			if (!stickerContent.rating().isEmpty() && Math.round(Float.parseFloat(stickerContent.rating())) >= min){
+				newListStickers.add(stickerContent);
+			}
+		}
+
+		setData(newListStickers.size() > 0 ? newListStickers : new ArrayList<StickerContent>());		
+    
+    System.out.println("Porém apenas " + getData().size()+ ", tem a classificação mínima de " + min + " ...");
+	}
 
 }
 

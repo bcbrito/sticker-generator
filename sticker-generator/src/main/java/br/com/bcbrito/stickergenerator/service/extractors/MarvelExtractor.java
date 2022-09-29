@@ -88,5 +88,10 @@ public class MarvelExtractor extends AbstractExtractor {
 	    });
 	    System.out.println("...Finalizado! :)");
 	  }
+
+	@Override
+	public void minimumRating(Float min){
+		//Não tem rating na Marvel
+	}
 	
 }

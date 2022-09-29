@@ -9,7 +9,6 @@ import lombok.Getter;
 import lombok.Setter;
 @Getter
 @Setter
-@SuppressWarnings("squid:S106")
 public abstract class AbstractExtractor implements StickerApi {
 
 	private List<StickerContent> data;
@@ -18,6 +17,8 @@ public abstract class AbstractExtractor implements StickerApi {
 	public void limitData(int max) {
 		if (max < data.size())
 			this.data = this.data.subList(0, max);
+		
+		System.out.println("Limitando o resultado em apenas " + max + "...");
 	}	
 	
 	private void printDataField(String format, String field) {
@@ -37,5 +38,5 @@ public abstract class AbstractExtractor implements StickerApi {
 			}			
 		}
 	}	
-
+	
 }

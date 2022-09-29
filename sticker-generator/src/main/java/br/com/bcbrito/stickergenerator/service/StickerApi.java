@@ -42,6 +42,8 @@ public interface StickerApi {
 
 	void generateStickers() throws StickerApiException;
 
+	void minimumRating(Float min) throws StickerApiException;
+
 	default void createSticker(StickerParameters param) throws StickerApiException {
 		new Sticker().create(param);
 	}

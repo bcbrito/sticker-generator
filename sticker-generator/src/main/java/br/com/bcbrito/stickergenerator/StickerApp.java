@@ -18,6 +18,7 @@ public class StickerApp {
 
 	public void callApi(Endpoint endpoint) throws StickerApiException, FileNotFoundException 
 	{		
+
 		StickerApi api = listApi
 				.stream()
 				.filter(stickerApi -> stickerApi.accept(endpoint))
@@ -25,9 +26,9 @@ public class StickerApp {
 				.orElseThrow(() -> new StickerApiException("Endpoint não mapeado a nenhuma implementação da StickerAPI."));
 		
 		api.consume(endpoint);
-		api.limitData(10);
+		api.minimumRating(5f);
+		api.limitData(10);		
 		api.printData();
 		api.generateStickers();
 	}
-
 }
