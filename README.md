@@ -83,6 +83,7 @@ Conteúdo:
 - [x] Uso de uma classe abstrata para o extrator, para separar os métodos relacionados aos dados, oriundos do consumo das Apis;
 - [x] Criação de classes de testes;
 - [x] Refatorações com base no SOLID e Design Pattern; 
+- [x] Implementado mínimo de classificação para mandar apenas os que eu quero para Patricia
 - [ ] Implementar testes para cada api que será consumida
 - [ ] Criar api para listar as linguagens de programação topzeiras e gerar os stickers
 
